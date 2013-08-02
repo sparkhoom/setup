@@ -32,6 +32,10 @@ sudo gem install rake
 
 # Download the vim-config and rake
 git clone https://github.com/sparkhoom/vim-config.git
+# rake install will download vundle, install the bundled plugins, and link the configuration to your home 
+cd vim-config
+rake install
+rake install:extra
 # git pull and install dotfiles as well
 cd $HOME
 if [ -d ./dotfiles/ ]; then
@@ -42,4 +46,6 @@ if [ -d .emacs.d/ ]; then
 fi
 git clone https://github.com/startup-class/dotfiles.git
 ln -sb setup/.screenrc .
+
+
 
