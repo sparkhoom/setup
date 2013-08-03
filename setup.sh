@@ -34,7 +34,7 @@ sudo gem install rake
 git clone https://github.com/sparkhoom/vim-config.git
 # rake install will download vundle, install the bundled plugins, and link the configuration to your home 
 cd vim-config
-rake install -y
+rake -y install 
 # git pull and install dotfiles as well
 cd $HOME
 git clone https://github.com/startup-class/dotfiles.git
@@ -45,6 +45,7 @@ sudo passwd ubuntu
 
 # Install OH-MY-ZSH
 sudo apt-get install -y zsh
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
 
 
